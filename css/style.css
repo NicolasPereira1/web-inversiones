@@ -12,31 +12,33 @@
         }
 
         /* ESTILO LOGO */
+
 .logo-inicial{
-width: 12%;
-height: 12%;
+width: 27%;
+
     }
 
          /* ESTILOS MENU NAV */
-
-.estilo-nav{
-        text-align: center;
-    }
 
 
 .menu-navegacion{
         font-family: "Markazi Text", serif;
         font-size: 2rem;
-        color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
-    }
+        background-color: #002B36;
+    } 
+
+.nav-link{
+color: white;
+}
+
+.nav-link:hover{
+    color: #8b9fd6;
+}
+
 
             /* Estilo Principal */
-
-.color-header{
-        background-color: #002B36;
-    }
 
 
     .color-footer{
@@ -51,15 +53,25 @@ height: 12%;
         background-position: center 25%;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+}   
+
 
 .primer-texto{
     background-color: #ffffff;
     text-align: center;
     color: #000000;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Montserrat", serif;
-    margin-left: 34%;
-    margin-right: 34%;
+    margin: 15px;
+    padding: 5px;
 }
 
 
@@ -67,10 +79,10 @@ height: 12%;
     background-color:#010b15;
     text-align: center;
     color: #ffffff;
-    font-size: 2.875rem;
+    font-size: 3.2rem;
     font-family: "Montserrat", serif;
-    margin-left: 34%;
-    margin-right: 34%;
+    margin: 15px;
+    padding: 8px;
 }
 
 .boton-agenda{
@@ -80,28 +92,24 @@ height: 12%;
     border: #000000 0.1rem solid;
     font-size: 1.3rem;
     font-family: "Montserrat", serif;
-    margin-left: 43%;
-    margin-right: 43%;
-    background-color: #ffffff;
+    background-color: #8b9fd6;
     border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
 }
 
 
 .texto-principal{
-    background-color: #3C4A58
-}
-
-.estilo-texto-principal{
+    background-color: #3C4A58;
+    margin: 1rem;
     font-family: "Montserrat", serif;
     font-size: 1.5rem;
     color: #ffffff;
-    margin-left: 22%;
-    margin-right: 22%;
     font-weight: lighter;
     text-align: justify;
+    margin: 15px;
+    padding: 15px;
 }
-
-
 
 
             /* ESTILOS HTMLS */
