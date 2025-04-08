@@ -1,0 +1,382 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+        /* ESTILOS GENERALES PARA TODOS LOS HTML*/
+        ul{
+        list-style: none;
+        }
+
+        /* ESTILO LOGO */
+.logo-inicial{
+width: 12%;
+height: 12%;
+    }
+
+         /* ESTILOS MENU NAV */
+
+.estilo-nav{
+        text-align: center;
+    }
+
+
+.menu-navegacion{
+        font-family: "Markazi Text", serif;
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+            /* Estilo Principal */
+
+.color-header{
+        background-color: #002B36;
+    }
+
+
+    .color-footer{
+       background-color:#001c24 ;
+    }
+            /* ESTILO INDEX */
+.background-inicio{
+        background-image:url(../assets/fondo-inicio.jpg);
+        background-size: cover;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center 25%;
+}
+
+
+.primer-texto{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    font-family: "Montserrat", serif;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+
+
+.titulo-principal{
+    background-color:#010b15;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.875rem;
+    font-family: "Montserrat", serif;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+
+.boton-agenda{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000000;
+    border: #000000 0.1rem solid;
+    font-size: 1.3rem;
+    font-family: "Montserrat", serif;
+    margin-left: 43%;
+    margin-right: 43%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.texto-principal{
+    background-color: #3C4A58
+}
+
+.estilo-texto-principal{
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 22%;
+    margin-right: 22%;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+
+
+            /* ESTILOS HTMLS */
+
+
+
+
+        /* titulos  */
+
+
+.titulo-inicial{
+    background-color: #063f4d;
+    font-family: "Montserrat", serif;
+    font-size: 2.8rem;
+    color: #a89b26;
+    text-align: center;
+
+}
+
+
+.subtitulo-main{
+    background-color: #dad8d8;
+    font-family: "Montserrat", serif;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 35px;
+    margin-bottom: px;
+    text-decoration: underline;
+}
+
+
+.estilo-main{
+    background-color: #dad8d8;
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: justify;
+    margin: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.estilo-main p{
+    margin-bottom: 20px;
+}
+
+.estilo-main-conclusion{
+    background-color: #dad8d8;
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: justify;
+    margin: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0%;
+}
+
+
+        /* BACKGROUND HTML */
+
+.background-etf{
+    background-image:url(../assets/fondo-etf.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-crypto{
+    background-image:url(../assets/fondo-crypto.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-bonos{
+    background-image:url(../assets/fondo-bonos.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-acciones{
+    background-image:url(../assets/fondo-acciones.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-nosotros{
+    background-image:url(../assets/fondo-nosotros.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-preguntas-frecuentes{
+    background-image:url(../assets/preguntas-frecuentes.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+.background-contacto{
+    background-image:url(../assets/fondo-contacto.jpg);
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
+
+
+            /* ESTILOS NOSOTROS */
+
+
+            /* FOTOS NOSOTROS */
+
+    .fotos-nosotros-estilo{
+        text-align: center;
+    }
+
+    .fotos-nosotros{
+        width: 10%;
+        height: 10%;
+    }
+
+    .pie-foto-nosotros{
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: "Montserrat", serif;
+        background-color: #dad8d8;
+        margin: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-weight: bold;
+    }
+
+
+            /* SOBRE NOSOTROS */
+
+
+    .estilo-main-nosotros   {
+        background-color: #dad8d8;
+        font-family: "Montserrat", serif;
+        font-size: 1.2rem;
+        color: #000000;
+        text-align: justify;
+        margin: 0px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 0%;
+        }
+
+    .titulo-nosotros{
+        font-family: "Montserrat", serif;
+        font-size: 2rem;
+        color: #000000;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 10px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        background-color: #dad8d8;
+        }
+
+    .subrayado{
+        text-decoration: underline;
+        }
+
+
+
+
+
+            /* ESTILOS FOOTER*/
+
+
+.footer{
+        text-decoration: none;
+        text-align: left;
+    }
+
+
+
+.footer-estilo{
+        font-family: "Montserrat", serif;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+footer p{
+        text-align: center;
+        color: #ffffff;
+        font-family: "Montserrat", serif;
+        font-size: 0.8rem;
+    }
+    
+
+
+.redes-sociales{
+    text-align: right;
+}
+
+
+
+.logo-footer{
+    text-align: center;
+}
+
+
+
+.logo-footer-tamaño{
+    width: 8%;
+    height: 8%;
+}
+
+
+
+    /* ESTILOS CONTACTO */
+
+    
+.envia-mensaje{
+    text-align: center;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+}
+form label{
+    color: #000000;
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    }
+
+    form input{
+    color: #000000;
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    }
+
+    form button{
+    color: #000000;
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    }
+
+    form textarea{
+    color: #000000;
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    }
+
+.mapa{
+    text-align: center;
+    margin-left: 34%;
+    margin-right: 34%;
+    }
+
+    /* ESTILOS PREGUNTAS FRECUENTES */
+
+    
