@@ -666,6 +666,9 @@ button:hover{
 
     .custom-navbar{
         font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        transition: none !important;
     }
 
     .nav-link{
@@ -676,10 +679,8 @@ button:hover{
     .custom-navbar:hover {
       background-color: #102b36;
       color: #e0b973;
-      font-size: 1.5rem;
       font-weight: normal;
       padding: 0;
-
     }
 
 
