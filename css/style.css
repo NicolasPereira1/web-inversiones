@@ -939,6 +939,10 @@ height: 15rem;
     
 }
 
+textarea{
+  border: 0.1rem solid #000000;
+}
+
   .label-cliente{
 padding-right: 2rem;
 font-size: 1rem;
