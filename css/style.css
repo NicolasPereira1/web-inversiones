@@ -674,6 +674,12 @@ button:hover{
         padding: 0;
     }
 
+    .custom-navbar:hover {
+      color: inherit;
+      background-color: transparent;
+    }
+
+
 
 /* ----------------------------INDEX-------------------------------- */
 
