@@ -4,12 +4,23 @@
         box-sizing: border-box;
     }
 
+    
+html, body{
+    height: 100%;
+}
 
-
-
-        /* ESTILOS GENERALES PARA TODOS LOS HTML*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+        
 ul{
-        list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
 }
 
         /* ESTILO LOGO */
@@ -20,28 +31,44 @@ width: 7rem;
 
          /* ESTILOS MENU NAV */
 
+
 .menu-navegacion{
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 4rem;
-    font-family: "Markazi Text", serif;
-    font-size: 2.2rem;
-    text-decoration: none;
-    text-transform: uppercase;
     background-color: #102b36;
-    margin: 0;
     padding-right: 2.1rem;
 } 
+
+.color-hamburguesa{
+    background-color: #bec3ca;
+    font-size: 1.3rem;
+    margin: 0;
+}
 
 .nav-link{
 color: #e0b973;
 }
 
-.nav-link:hover{
-    color: #99b7d3 ;
-}
-
+.custom-navbar{
+    background-color: white;
+    font-family: "Markazi Text", serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    background-color: #102b36;
+    border-radius: 1.25rem;
+  }
+  
+  .custom-navbar:hover {
+    background-color: #889ca4;
+    font-family: "Markazi Text", serif;
+    font-size: 2.2rem;
+    border-radius: 1.25rem;
+    font-weight: bold;
+    color: #213555;
+    padding: 8px 20px;
+  }
 
             /* Estilo Principal */
 
@@ -75,7 +102,7 @@ color: #e0b973;
     padding: .3125rem;
 }
 
-.titulo-principal{
+.titulo-principal{  
     background-color:#1a3b4a ;
     color: #ffffff;
     font-weight: bold;
@@ -103,7 +130,6 @@ color: #e0b973;
     padding-right: .65rem;
     padding-top: .33rem;
     padding-bottom: .335rem;
-    
 }
 
 .boton-agenda:hover{
@@ -117,6 +143,7 @@ color: #e0b973;
 
 .texto-principal{
     width: 70%;
+    height: auto;
     background-color: #1a3b4a;
     font-family: "Montserrat", serif;
     font-size: 1.5rem;
@@ -128,10 +155,9 @@ color: #e0b973;
     padding-top: .9rem;
 }
 
+/*-------------------------------------- ESTILOS HTMLS------------------------------------------ */
 
-            /* ESTILOS HTMLS */
-
-        /* titulos  */
+        /*------------------------------------ titulos-------------------------------------  */
 .contenedor-titulo-inicial{
             display: flex;
             justify-content: center;
@@ -139,6 +165,7 @@ color: #e0b973;
 }
 
 .titulo-inicial{
+    text-align: center;
     padding: 0.625rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -180,7 +207,6 @@ color: #e0b973;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: space-around;
-    align-items: space-around;
 }
 
 .subtitulo-main{
@@ -193,14 +219,14 @@ color: #e0b973;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 }
 
-.estilo-main{
+.estilo-main{ 
     font-family: "Montserrat", serif;
     font-size: 1.3rem;
     color: #000000;
     text-align: justify;
     margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .estilo-uso-tipos{
@@ -225,8 +251,11 @@ color: #e0b973;
     justify-content: space-around;
     margin-top: 4rem ;
     gap: 1.5rem;
-    max-width: auto;
     flex-wrap: wrap;
+}
+
+.card-tamaño-pages{
+    width: 35rem;
 }
     
 .card-titulo{
@@ -283,20 +312,15 @@ color: #e0b973;
  background-color: #2e5a6b3b;
 }
 
-.background-contacto{
-    background-image:url(../assets/fondo-contacto.jpg);
-    background-size: cover;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-position: center 25%;
-}
+
+  
 
 
 
-            /* ESTILOS NOSOTROS */
+/* --------------------------------------------------------------Nosotros Seccion--------------------------------------------------------------------- */
 
 
-            /* FOTOS NOSOTROS */
+           
 
 .contenedor-imagenes-nosotros{
     display: flex;
@@ -307,17 +331,22 @@ color: #e0b973;
     margin: 2rem;
 }
 
+.card-tamaño{
+    width: 30rem ;
+}
+
+.card-tamaño-director{
+    width: 35rem;
+}
+
 .nosotros-img{
-width: 100%;
 height: 30rem;
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
 }
 
 .nosotros-img-director{
-    width: 100%;
     height: 36rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -347,22 +376,19 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     margin-bottom: 1.1rem;
 }
 
-            /* SOBRE NOSOTROS */
+
 
 
 .estilo-main-nosotros{
     margin-top: 5rem;
     margin-bottom: 0;
     color: #1A2A30;
-
-   
 }
 
 .contenedor-nosotros-texto{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     justify-content: space-around;
-    align-items: space-around;
     column-gap: 10rem;
     margin-top: 3rem;
     margin-left: 5rem;
@@ -378,32 +404,41 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 
 
-            /* ESTILOS FOOTER*/
+/* --------------------------------------------------------------Footer---------------------------------------------------------------------- */
 .contenedor-footer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         background-color:#001c24 ;
+        
 }
 
 .footer-col-enlaces{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    
 }
 
 .contenedor-enlaces{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+.titulos-footer{
+    color: #e0b973;
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-decoration: underline;
 }
 
 .footer-estilo{   
         font-family: "Montserrat", serif;
         font-size: 1rem;
         color: #ffffff;
-        padding-right: 3.75rem;
+        
 }
 
 .footer-p{
@@ -424,15 +459,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     grid-template-rows: 1fr 1fr;
 }
 
-.titulos-footer{
-    color: #e0b973;
-    font-family: "Montserrat", serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    text-decoration: underline;
-}
+
 
 .redes-sociales{
     display: flex;
@@ -468,50 +495,469 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 
 
-    /* ESTILOS CONTACTO */
+/* --------------------------------------------------------------Contactos seccion---------------------------------------------------------------------- */
 
-    
-.envia-mensaje{
-    text-align: center;
-    color: #000000;
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: "Montserrat", serif;
-    text-transform: uppercase;
+.background-contacto {
+    position: relative;
+    z-index: 1;
+  }
+  
+.background-contacto::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/fondo-contacto.jpg);
+    background-size: cover;
+    filter: blur(1px);
+    z-index: -1;
 }
 
-form label{
-    color: #000000;
-    font-family: "Montserrat", serif;
-    font-size: 1.4rem;
+.margen-contacto{
+    width: 90%;
 }
-
-form input{
-    color: #000000;
-    font-family: "Montserrat", serif;
-    font-size: 1.4rem;
-    background-color: #ffffff;
-}
-
-form button{
-    color: #000000;
-    font-family: "Montserrat", serif;
-    font-size: 1.4rem;
-    background-color: #ffffff;
-}
-form textarea{
-    color: #000000;
-    font-family: "Montserrat", serif;
-    font-size: 1.4rem;
-    background-color: #ffffff;
-}
-
+ 
 .mapa{
-    text-align: center;
-    margin-left: 34%;
-    margin-right: 34%;
+        width: 100%;
+        height: 100%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-right: .31rem;
+    }
+
+.formulario-contacto{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    
 }
 
-    /* ESTILOS PREGUNTAS FRECUENTES */
+.borde-form{
+    border: 0.2rem solid #000000;
+    border-radius: 1.875rem;
+    background-color: #ffffff;
+    padding: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 
+}
+
+
+.background-form{
+    background-color: #7fa2ac;
+}
+
+
+input[type="text"], input[type="email"] {
+    width: 60%;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #000000;
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+input[type="radio"]{
+    width: 1.3rem;
+    height: 3.5rem;
+}
+ 
+
+label{
+    text-align: center;
+    width: 40%;
+    padding-right: 5rem;
+    padding-top: .7rem;
+    font-family: "Montserrat", serif;
+    font-size: 1.3rem;
+    text-decoration: underline 1px solid #000000;
+}
+
+.label-cliente{
+    text-align: center;
+    width: 40%;
+    padding-right: 5rem;
+    padding-top: .7rem;
+    font-family: "Montserrat", serif;
+    font-size: 1.3rem;
+    text-decoration: underline 1px solid #000000;
+}
+
+textarea{
+    width: 60%;
+    border: 0.2rem solid #000000;
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.centrado-radio{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    margin-bottom: 1.25rem;
+}
+ 
+button[type="submit"]{
+    font-family: "Montserrat", serif;
+    font-size: 2rem;       
+    padding: 1rem ;     
+    border-radius: 1rem;    
+    background-color: #e0b973; 
+    color: #000000;         
+    border: none;            
+    cursor: pointer; 
     
+}
+
+
+.boton-submit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #b3832a;
+}
+      
+
+/* --------------------------------------------------------------Preguntas frecuentes---------------------------------------------------------------------- */
+
+.margin-acordeon {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      
+
+.reset-colores {
+        --bs-accordion-bg: #2e5a6b37;
+        --bs-accordion-btn-color: #000000;
+        --bs-accordion-btn-bg: #2e5a6b37;
+        --bs-accordion-active-color: #000000;
+        --bs-accordion-active-bg: #2e5a6bb9;
+        --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.mi-hover:hover {
+        background-color: #1c3c47;
+        color: #ffffff;
+    }
+      
+.negrita{
+    font-weight: bold;
+}
+
+
+
+/* --------------------------------------------------------------MEDIA QUERY---------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+
+
+    /* ------------------------NAV---------------------------- */
+    .menu-navegacion{
+       align-items: center;
+       padding: 0;
+       gap: 0;
+    }
+
+    .custom-navbar{
+        font-size: 1.5rem;
+    }
+
+    .nav-link{
+        margin: 0;
+        padding: 0;
+    }
+
+
+/* ----------------------------INDEX-------------------------------- */
+
+    .contenedor-main {
+        justify-content: flex-start;
+        padding-top: 8rem;
+      }
+    
+
+   .primer-texto{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: .9rem;
+    padding: 0;
+   }
+
+   .titulo-principal{
+    font-size: 2.3rem;
+    margin-right: 6%;
+    margin-left: 6%;
+   }
+
+  .boton-agenda{
+    border: #000000  0.1rem solid;
+    font-size: 1rem;
+    margin-top: .9rem;
+  }
+
+  .texto-principal{
+    width: 90%;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  /* ------------------HTML PAGES--------------------------- */
+
+  .contenedor-que-son{
+    grid-template-rows: 1fr;
+  }
+
+  .contenedor-uso-tipos{
+    grid-template-columns: 1fr;
+  }
+
+  .estilo-main{
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .p-main{
+    font-size: 1.4rem;
+  }
+
+  .titulo-inicial{
+    font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .subtitulo-main{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .estilo-uso-tipos{
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .card-tamaño-pages{
+    width: 85%;
+  }
+
+  .img-card-tamaño{
+    height: 10rem;
+  }
+
+  .card-titulo{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+
+  .card-descripcion{
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .estilo-main-conclusion{
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2rem;
+    }
+
+    .contenedor-cards{
+        margin-top: 1.5rem;
+    }
+
+  .contenedor-imagenes{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .pages-img{
+    width: 90%;
+    height: 10rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+  }
+
+  .ocultar-mobile{
+    display: none;
+  }
+
+/* ------------------------FOOTER------------------------ */
+  .contenedor-footer{
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor-enlaces{
+    flex-direction: column;
+    padding: 0;
+  }  
+
+  .contenedor-enlaces li{
+    margin-bottom: .8rem;
+  }
+
+  .footer-estilo{
+    font-size: 0.8rem;
+  }
+
+  .footer-col-enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titulos-footer{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+  }
+
+
+
+  .redes-sociales-iconos{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .estilo-iconos{   
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+
+  .footer-col-enlaces {
+    order: 1;
+  }
+
+  .footer-col-iconos {
+    
+    order: 2;
+  }
+
+  .logo-footer {
+    order: 3;
+  }
+
+  .footer-p{
+    font-size: 0.6rem;
+    padding-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .logo-footer{
+    padding-top: 50px;
+    
+  }
+
+  /* -------------------QUIENES SOMOS---------------------- */
+
+ .nosotros-img{
+height: 15rem;
+ }
+
+  .nosotros-img-director{
+    height: 20rem;
+  }
+
+  .card-tamaño{
+    width: 15rem;
+  }
+  
+  .card-tamaño-director{
+    width: 18rem;
+  }
+
+  .quienes-somos{
+    margin-bottom: .5rem;
+  }
+
+  .color-card-texto-nosotros{
+    font-size: .7rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contenedor-nosotros-texto{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+/* ---------------------CONTACTO------------------ */
+  
+  .mapa{
+    
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+    
+  }
+
+  .formulario-contacto{
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="text"], input[type="email"] {
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #000000;
+  }
+
+  label{
+    padding: 0;
+    padding-right: 2rem;
+    font-size: 1rem;
+    
+}
+
+  .label-cliente{
+padding-right: 2rem;
+font-size: 1rem;
+}
+
+  input[type="radio"]{
+    width: 1rem;
+    height: 1.6rem;
+}
+
+  button[type="submit"]{
+    font-size: 1rem;       
+    padding: .7rem ;        
+}
+
+/* -------------------------PREGUNTAS FRECUENTES----------------------------- */
+.margin-acordeon{
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .li-acordeon {
+    text-align: left;
+    padding: 0;
+  }
+
+  .li-acordeon li{
+    padding-bottom: .7rem;
+  }
+
+}

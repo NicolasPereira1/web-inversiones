@@ -27,120 +27,210 @@
   <header>
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg menu-navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img class="logo-inicial" src="../assets/logo2.PNG" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav menu-navegacion">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/etf.html">Etf´s</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/crypto.html">Crypto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../pages/bonos.html">Bonos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../pages/acciones.html">Acciones</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo-inicial" src="../assets/logo2.PNG" alt="Logo"></a>
+        <button class="navbar-toggler color-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav menu-navegacion">
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../pages/etf.html">Etf´s</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../pages/crypto.html">Crypto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  custom-navbar" href="../pages/bonos.html">Bonos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  custom-navbar" href="../pages/acciones.html">Acciones</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 </header>
 
 
 
-    <!-- SECCION PRINCIPAL -->
-     <main class="background-preguntas-frecuentes">
+<!-- SECCION PRINCIPAL -->
+<main class="background-pages">
 
-        <!-- Titulo de la pestaña -->
-<section>
-    <h1 class="titulo-inicial">Preguntas Frecuentes (FAQ)</h1>
-</section>
+<div class="contenedor-titulo-inicial">
+  <h1 class="titulo-inicial">Preguntas frecuentes</h1>
+</div>
 
-    <!-- Sub-titulos -->
+      <section class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion reset-colores" id="accordionPanelsStayOpenExample">
+      
+              <!-- Acordeón 1 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Que es Inversiones Uruguay?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Inversiones Uruguay es una plataforma especializada en brindar información y asesoramiento sobre diversas oportunidades de inversión en el mercado financiero. Nuestro objetivo es ayudar a los inversores a tomar decisiones informadas y estratégicas.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Acordeón 2 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Cómo puedo comenzar a invertir?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Para comenzar a invertir, es importante definir tus objetivos financieros, evaluar tu tolerancia al riesgo y seleccionar un bróker confiable. Luego, puedes elegir entre diversas opciones de inversión, como ETFs, criptomonedas, acciones y bonos, según tu perfil de riesgo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Acordeón 3 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Qué tipo de inversiones ofrecen?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Ofrecemos información detallada sobre diferentes alternativas de inversión, incluyendo:</p>
+                    <ul class="li-acordeon">
+                        <li><span class="negrita">-ETFs: </span> Fondos que agrupan múltiples activos y se negocian en bolsa.</li>
+                        <li><span class="negrita">-Criptomonedas:</span> Activos digitales como Bitcoin, Ethereum y stablecoins.</li>
+                        <li><span class="negrita">-Bonos: </span>Instrumentos de renta fija emitidos por gobiernos o corporaciones.</li>
+                        <li><span class="negrita">-Acciones:</span> Participaciones en empresas de distintos sectores y mercados.</li> 
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Acordeón 4 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Cuáles son los riesgos de invertir?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Toda inversión conlleva un nivel de riesgo. La volatilidad del mercado, las fluctuaciones económicas y la posible pérdida de capital son algunos de los factores a considerar. Por ello, es recomendable diversificar tu cartera y mantener una estrategia de inversión a largo plazo.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Acordeón 5 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    ¿Cómo puedo minimizar los riesgos?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Para reducir los riesgos en tu inversión, puedes seguir estas recomendaciones:</p>
+                    <ul class="li-acordeon">
+                        <li><span class="negrita">-Diversificar tu portafolio</span> invirtiendo en diferentes tipos de activos.</li>
+                        <li><span class="negrita">-Invertir a largo plazo</span> y evitar decisiones impulsivas basadas en la volatilidad del mercado.</li>
+                        <li><span class="negrita">-Mantenerte informado</span> sobre las tendencias y regulaciones financieras.</li>
+                        <li><span class="negrita">-Consultar con expertos</span> financieros antes de tomar decisiones importantes.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-    <section  class="estilo-main">
-     <h2 class="subtitulo-main">¿Que es Inversiones Uruguay?</h2>
-     <p>Inversiones Uruguay es una plataforma especializada en brindar información y asesoramiento sobre diversas oportunidades de inversión en el mercado financiero. Nuestro objetivo es ayudar a los inversores a tomar decisiones informadas y estratégicas.</p>
-    </section>
+              <!-- Acordeón 6 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Qué plataforma recomiendan para invertir?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Existen diversas plataformas confiables para invertir. La elección dependerá del tipo de inversión que deseas realizar, las comisiones y la facilidad de uso. Algunas opciones populares incluyen brókers regulados, exchanges de criptomonedas y plataformas de gestión de fondos.
 
-     <section class="estilo-main">
-     <h2 class="subtitulo-main">¿Cómo puedo comenzar a invertir?</h2>
-     <p>Para comenzar a invertir, es importante definir tus objetivos financieros, evaluar tu tolerancia al riesgo y seleccionar un bróker confiable. Luego, puedes elegir entre diversas opciones de inversión, como ETFs, criptomonedas, acciones y bonos, según tu perfil de riesgo.</p>
-    </section>
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-    <section class="estilo-main">
-     <h2 class="subtitulo-main">¿Qué tipo de inversiones ofrecen?</h2>
-     <p>Ofrecemos información detallada sobre diferentes alternativas de inversión, incluyendo:</p>
-     <ul>
-        <li><strong>ETFs: </strong> Fondos que agrupan múltiples activos y se negocian en bolsa.</li>
-        <li><strong>Criptomonedas: </strong> Activos digitales como Bitcoin, Ethereum y stablecoins.</li>
-        <li><strong>Bonos: </strong>Instrumentos de renta fija emitidos por gobiernos o corporaciones.</li>
-        <li><strong>Acciones: </strong>Participaciones en empresas de distintos sectores y mercados.</li> 
-     </ul>
-    </section>
+              <!-- Acordeón 7 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Puedo retirar mi dinero en cualquier momento?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Sí, aunque dependerá del tipo de activo en el que hayas invertido. Activos como acciones y criptomonedas ofrecen mayor liquidez, permitiendo la compra y venta en cualquier momento del mercado. En cambio, algunos bonos o fondos de inversión pueden requerir plazos específicos para su retiro.</p>
+                  </div>
+                </div>
+              </div>
 
-    <section class="estilo-main">
-     <h2 class="subtitulo-main">¿Cuáles son los riesgos de invertir?</h2>
-     <p>Toda inversión conlleva un nivel de riesgo. La volatilidad del mercado, las fluctuaciones económicas y la posible pérdida de capital son algunos de los factores a considerar. Por ello, es recomendable diversificar tu cartera y mantener una estrategia de inversión a largo plazo.</p>
-    </section>
-
-    <section class="estilo-main">
-        <h2 class="subtitulo-main">¿Cómo puedo minimizar los riesgos?</h2>
-        <p>Para reducir los riesgos en tu inversión, puedes seguir estas recomendaciones:</p>
-
-        <ul>
-            <li>Diversificar tu portafolio invirtiendo en diferentes tipos de activos.</li>
-            <li>Invertir a largo plazo y evitar decisiones impulsivas basadas en la volatilidad del mercado.</li>
-            <li>Mantenerte informado sobre las tendencias y regulaciones financieras.</li>
-            <li>Consultar con expertos financieros antes de tomar decisiones importantes.</li>
-        </ul>
-    </section>
-
-    <section class="estilo-main">
-        <h2 class="subtitulo-main">¿Cuáles son los costos asociados a la inversión?</h2>
-        <p>Los costos varían según el tipo de activo y el bróker utilizado. Algunos costos comunes incluyen:</p>
-
-        <ul>
-            <li><strong>Comisiones de compra y venta</strong>en plataformas de inversión.</li>
-            <li>Gastos de gestión<strong>en ETFs y fondos de inversión.</strong></li>
-            <li><strong>Spreads y tarifas de retiro</strong>en exchanges de criptomonedas.</li>
-        </ul>
-
-        <p>Antes de invertir, es recomendable revisar las condiciones y costos de cada plataforma.</p>
-    </section>
-
-    <section class="estilo-main">
-        <h2 class="subtitulo-main">¿Qué plataforma recomiendan para invertir?</h2>
-        <p>Existen diversas plataformas confiables para invertir. La elección dependerá del tipo de inversión que deseas realizar, las comisiones y la facilidad de uso. Algunas opciones populares incluyen brókers regulados, exchanges de criptomonedas y plataformas de gestión de fondos.</p>
-    </section>
-
-    <section class="estilo-main">
-        <h2 class="subtitulo-main">¿Puedo retirar mi dinero en cualquier momento?</h2>
-        <p>Sí, aunque dependerá del tipo de activo en el que hayas invertido. Activos como acciones y criptomonedas ofrecen mayor liquidez, permitiendo la compra y venta en cualquier momento del mercado. En cambio, algunos bonos o fondos de inversión pueden requerir plazos específicos para su retiro.</p>
-    </section>
-
-    <section class="estilo-main">
-        <h2 class="subtitulo-main">¿Cómo puedo contactar con Inversiones Uruguay?</h2>
-        <p>Si tienes más dudas o necesitas asesoramiento personalizado, puedes contactarnos a través de nuestra sección de <strong>Contacto</strong>, donde podrás enviarnos tus consultas e inquietudes. Otras formas de contacto: </p>
-
-        <ul>
-            <li><strong class="subrayado">Correo Electrónico: </strong>Responderemos tus dudas en el menor tiempo posible.</li>
-            <li><strong class="subrayado">Whataspp: </strong>Atención personalizada en horario laboral.</li>
-            <li><strong class="subrayado">Redes sociales: </strong>Síguenos y mantente al tanto de novedades y tendencias de inversión.</li>
-            <li><strong class="subrayado">Youtube: </strong>Donde explicamos a fondo todo lo relacionado con inversiones mediante análisis, consejos y estrategias.</li>
-        </ul>
-    </section>
-
+                <!-- Acordeón 8 -->
+                <div class="accordion-item margin-acordeon">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                      ¿Cómo puedo contactar con Inversiones Uruguay?
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                       <p>Si tienes más dudas o necesitas asesoramiento personalizado, puedes contactarnos a través de nuestra sección de <span class="negrita">Contacto</span>, donde podrás enviarnos tus consultas e inquietudes. Otras formas de contacto: </p>
+                    </div>
+                  </div>
+                </div>
+      
+              <!-- Acordeón 9 -->
+              <div class="accordion-item margin-acordeon">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mi-hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseSix">
+                    ¿Cuáles son los costos asociados a la inversión?
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Los costos varían según el tipo de activo y el bróker utilizado. Algunos costos comunes incluyen:</p>
+                    <ul class="li-acordeon">
+                        <li><span class="negrita">-Comisiones </span> de compra y venta en plataformas de inversión.</li>
+                        <li><span class="negrita">-Gastos de gestión</span> en ETFs y fondos de inversión.</li>
+                        <li><span class="negrita">-Spreads y tarifas de retiro</span>en exchanges de criptomonedas.</li>
+                    </ul>
+                    <p>Antes de invertir, es recomendable revisar las condiciones y costos de cada plataforma.</p>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+      
 </main>
 
 
@@ -158,8 +248,8 @@
   
   </section>
   
-  <section>
-    <div class="logo-footer">
+  <section  class="logo-footer">
+    <div>
       <img class="logo-footer-tamaño" src="../assets/logo-footer1.PNG" alt="Logo de Inversiones Uruguay">
       <p class="footer-p">© 2025 Inversiones Uruguay - Todos los  derechos reservados.</p>
   </div>

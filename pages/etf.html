@@ -27,32 +27,32 @@
   <header>
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg menu-navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img class="logo-inicial" src="../assets/logo2.PNG" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav menu-navegacion">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/etf.html">Etf´s</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/crypto.html">Crypto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../pages/bonos.html">Bonos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../pages/acciones.html">Acciones</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo-inicial" src="../assets/logo2.PNG" alt="Logo"></a>
+        <button class="navbar-toggler color-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav menu-navegacion">
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../pages/etf.html">Etf´s</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-navbar" href="../pages/crypto.html">Crypto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  custom-navbar" href="../pages/bonos.html">Bonos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  custom-navbar" href="../pages/acciones.html">Acciones</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 </header>
 
@@ -64,7 +64,7 @@
     
     <!-- Titulo de la pestaña -->
 <div class="contenedor-titulo-inicial">
-  <h1 class="titulo-inicial">ETF´S.</h1>
+  <h1 class="titulo-inicial">ETF´S</h1>
 </div>
     
 
@@ -80,8 +80,8 @@
   
    <!-- IMAGENES -->
 <section class="contenedor-imagenes">
-  <div><img class="pages-img" src="../assets/foto-etf1.jpg" alt="foto etf"></div>
-  <div><img class="pages-img" src="../assets/foto-etf2.jpg" alt="foto etf"></div>
+  <div><img class="pages-img " src="../assets/foto-etf1.jpg" alt="foto etf"></div>
+  <div><img class="pages-img ocultar-mobile" src="../assets/foto-etf2.jpg" alt="foto etf"></div>
   <div><img class="pages-img" src="../assets/foto-etf3.jpg" alt="foto etf"></div>
 </section>
 
@@ -107,7 +107,7 @@
   <ul>
     <li class="estilo-uso-tipos"><strong>- ETF´S de Renta Variable:</strong> invierten en acciones de empresas agrupadas por sector, país o índice bursátil (por ejemplo, el S&P 500).</li>
     <li class="estilo-uso-tipos"><strong>- ETF´S de Renta Fija:</strong> incluyen bonos gubernamentales o corporativos, ideales para estrategias de inversión más conservadoras.</li>
-    <li class="estilo-uso-tipos"> <strong>- ETF´S de Materias Primas:</strong> replican el comportamiento de activos como el oro, la plata o el petróleo.</li>
+    <li class="estilo-uso-tipos"><strong>- ETF´S de Materias Primas:</strong> replican el comportamiento de activos como el oro, la plata o el petróleo.</li>
     <li class="estilo-uso-tipos"><strong>- ETF´S Inversos:</strong> diseñados para obtener rentabilidad en escenarios de caída del mercado.</li>
     <li class="estilo-uso-tipos"><strong>- ETF´S Apalancados:</strong> emplean derivados financieros para amplificar el rendimiento potencial, aunque con un mayor nivel de riesgo.</li>
   </ul>
@@ -139,16 +139,17 @@
 </section>
 
 <section class="contenedor-cards">
-<div class="card" style="width: 35rem;">
-  <img class="img-card-tamaño" src="../assets/spy.png" class="card-img-top" alt="SPY">
+
+<div class="card card-tamaño-pages" >
+  <img class="img-card-tamaño card-img-top" src="../assets/spy.png" alt="SPY">
   <div class="card-body card-color">
     <h5 class="card-title card-titulo">SPY</h5>
     <p class="card-text card-descripcion">Replica el índice S&P 500, compuesto por las 500 empresas más grandes de Estados Unidos.</p>
   </div>
 </div>
 
-<div class="card" style="width: 35rem;">
-  <img class="img-card-tamaño" src="../assets/ivv.png" class="card-img-top" alt="SPY">
+<div class="card card-tamaño-pages">
+  <img class="img-card-tamaño card-img-top" src="../assets/ivv.png" alt="SPY">
   <div class="card-body card-color">
     <h5 class="card-title card-titulo">IVV</h5>
     <p class="card-text card-descripcion">Replica el índice S&P 500, pero con una estructura de costos más baja que SPY, lo que lo convierte en una opción eficiente para invertir en las principales empresas estadounidenses.</p>
@@ -156,8 +157,8 @@
 </div>
 
 
-<div class="card" style="width: 35rem;">
-  <img class="img-card-tamaño" src="../assets/qqq.png" class="card-img-top" alt="SPY">
+<div class="card card-tamaño-pages" >
+  <img class="img-card-tamaño card-img-top" src="../assets/qqq.png" alt="SPY">
   <div class="card-body card-color">
     <h5 class="card-title card-titulo">QQQ</h5>
     <p class="card-text card-descripcion">Sigue el rendimiento del índice Nasdaq-100, que incluye a las 100 compañías tecnológicas más importantes.</p>
@@ -166,24 +167,24 @@
 </section>
 
 <section class="contenedor-cards">
-  <div class="card" style="width: 35rem;">
-    <img class="img-card-tamaño" src="../assets/vwo.png" class="card-img-top" alt="SPY">
+  <div class= "card-tamaño-pages card">
+    <img class="img-card-tamaño card-img-top" src="../assets/vwo.png" alt="SPY">
     <div class="card-body card-color">
       <h5 class="card-title card-titulo">VWO</h5>
       <p class="card-text card-descripcion">Proporciona exposición a economías en desarrollo, como China, India y Brasil.</p>
     </div>
   </div>
 
-  <div class="card" style="width: 35rem;">
-    <img class="img-card-tamaño" src="../assets/vxus.png" class="card-img-top" alt="SPY">
+  <div class= "card-tamaño-pages card">
+    <img class="img-card-tamaño card-img-top" src="../assets/vxus.png" alt="SPY">
     <div class="card-body card-color">
       <h5 class="card-title card-titulo">VXUS</h5>
       <p class="card-text card-descripcion">Ofrece exposición a acciones internacionales fuera de Estados Unidos, incluyendo mercados desarrollados y emergentes. Ideal para diversificar globalmente.</p>
     </div>
   </div>
   
-  <div class="card" style="width: 35rem;">
-    <img class="img-card-tamaño" src="../assets/bnd.png" class="card-img-top" alt="SPY">
+  <div class= "card-tamaño-pages card">
+    <img class="img-card-tamaño card-img-top" src="../assets/bnd.png" alt="SPY">
     <div class="card-body card-color">
       <h5 class="card-title card-titulo">BND</h5>
       <p class="card-text card-descripcion">Compuesto por bonos de renta fija, ideal para estrategias de inversión más conservadoras</p>
@@ -216,8 +217,8 @@
   
   </section>
   
-  <section>
-    <div class="logo-footer">
+  <section  class="logo-footer">
+    <div>
       <img class="logo-footer-tamaño" src="../assets/logo-footer1.PNG" alt="Logo de Inversiones Uruguay">
       <p class="footer-p">© 2025 Inversiones Uruguay - Todos los  derechos reservados.</p>
   </div>
