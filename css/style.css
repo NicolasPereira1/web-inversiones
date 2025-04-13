@@ -52,7 +52,6 @@ color: #e0b973;
 }
 
 .custom-navbar{
-    background-color: white;
     font-family: "Markazi Text", serif;
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -675,8 +674,12 @@ button:hover{
     }
 
     .custom-navbar:hover {
-      color: inherit;
-      background-color: transparent;
+      background-color: #102b36;
+      color: #e0b973;
+      font-size: 1.5rem;
+      font-weight: normal;
+      padding: 0;
+
     }
 
 
