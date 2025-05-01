@@ -1,0 +1,127 @@
+@use "variables" as *;
+
+.background-inicio {
+  background-image: url(../assets/fondo-inicio.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+  .contenedor-main {
+    @include flex-general;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+
+    .primer-texto {
+      background-color: #f4f7f9;
+      text-align: center;
+      color: $color-negro;
+      font-size: 1.3rem;
+      font-family: $letra-principal;
+      margin: 0.625rem;
+      padding: 0.3125rem;
+    }
+
+    .titulo-principal {
+      background-color: #1a3b4a;
+      color: $color-blanco;
+      font-weight: bold;
+      font-size: 3.2rem;
+      font-family: $letra-principal;
+      margin-bottom: 0.3125rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.56);
+    }
+
+    .boton-agenda {
+      font-weight: bold;
+      color: $color-negro;
+      border: $color-negro 0.2rem solid;
+      font-size: 1.3rem;
+      font-family: $letra-principal;
+      background-color: $color-dorado;
+      border-radius: 1.875rem;
+      margin-top: 3.125rem;
+      margin-bottom: 1.25rem;
+      padding-left: 0.65rem;
+      padding-right: 0.65rem;
+      padding-top: 0.33rem;
+      padding-bottom: 0.335rem;
+
+      &:hover {
+        background-color: #102b36;
+        color: $color-dorado;
+        transition: 0.4s;
+        cursor: pointer;
+        border: $color-dorado 0.2rem solid;
+      }
+    }
+
+
+
+    .texto-principal {
+      width: 70%;
+      height: auto;
+      background-color: #1a3b4a;
+      font-family: $letra-principal;
+      font-size: 1.5rem;
+      color: #e0e2e4;
+      text-align: justify;
+      margin-top: 3.125rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      padding-top: 0.9rem;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+
+  .background-inicio {
+    background-image: url(../assets/fondo-inicio.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+.contenedor-main {
+  justify-content: flex-start;
+  padding-top: 8rem;
+
+  .primer-texto {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  
+  .titulo-principal {
+    font-size: 2.3rem;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  
+  .boton-agenda {
+    border: $color-negro 0.1rem solid;
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+  
+  .texto-principal {
+    width: 90%;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+}
+}
+

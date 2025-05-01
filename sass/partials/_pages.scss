@@ -1,0 +1,238 @@
+@use "variables" as *;
+
+.background-pages {
+  background-color: #2e5a6b3b;
+
+  // Título inicial
+  .contenedor-titulo-inicial {
+@include flex-general;
+  }
+
+  .titulo-inicial {
+    text-align: center;
+    padding: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #063f4d;
+    font-family: $letra-principal;
+    font-size: 3rem;
+    color: #a89b26;
+    border-radius: 1.875rem;
+    margin-top: 1rem;
+  }
+
+  // ¿Qué son y cómo funcionan?
+  .contenedor-que-son {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Imágenes
+  .contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    gap: 1.25rem;
+
+    .pages-img {
+      width: 31.25rem;
+      height: 21.875rem;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  // ¿Para qué sirven los ETF's?
+  .contenedor-uso-tipos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+  }
+
+  .subtitulo-main {
+    font-family: $letra-principal;
+    font-size: 2.1rem;
+    color: $color-negro;
+    text-align: center;
+    margin: 3rem;
+    text-decoration: underline;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .estilo-main {
+    font-family: $letra-principal;
+    font-size: 1.3rem;
+    color: $color-negro;
+    text-align: justify;
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .estilo-uso-tipos {
+    font-family: $letra-principal;
+    font-size: 1.3rem;
+    color: $color-negro;
+    text-align: justify;
+    margin-bottom: 1.25rem;
+  }
+
+  .p-main {
+    font-family: $letra-principal;
+    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+  }
+
+  // Cards de ETF's populares
+  .contenedor-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    .card-tamaño-pages {
+      width: 35rem;
+
+      .card-titulo {
+        text-align: center;
+        font-family: $letra-principal;
+        font-size: 2rem;
+        text-decoration: underline;
+        margin-bottom: 1.25rem;
+        color: $color-dorado;
+      }
+
+      .card-descripcion {
+        text-align: justify;
+        font-size: 1.2rem;
+        color: $color-blanco;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+      }
+
+      .card-color {
+        background-color: #1b5a74;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .img-card-tamaño {
+        height: 20rem;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+
+  // Conclusión
+  .contenedor-conclusion {
+@include flex-general;
+  }
+
+  .estilo-main-conclusion {
+    font-family: $letra-principal;
+    font-size: 1.3rem;
+    color: $color-negro;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4rem;
+  }
+
+  // Media Query para pantallas de menos de 500px
+  @media (max-width: 500px) {
+    .contenedor-que-son {
+      grid-template-rows: 1fr;
+    }
+
+    .contenedor-uso-tipos {
+      grid-template-columns: 1fr;
+    }
+
+    .estilo-main {
+      font-size: 1rem;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .p-main {
+      font-size: 1.4rem;
+    }
+
+    .titulo-inicial {
+      font-size: 2.5rem !important;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .subtitulo-main {
+      font-size: 1.6rem;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+
+    .estilo-uso-tipos {
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    .card-tamaño-pages {
+      width: 85% !important;
+    }
+
+    .img-card-tamaño {
+      height: 10rem !important;
+    }
+
+    .card-titulo {
+      font-size: 1.3rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .card-descripcion {
+      font-size: 1rem !important;
+      padding: 0 !important;
+    }
+
+    .estilo-main-conclusion {
+      margin: 0;
+      font-size: 1rem;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-cards {
+      margin-top: 1.5rem;
+    }
+
+    .contenedor-imagenes {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .pages-img {
+      width: 90% !important;
+      height: 10rem !important;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 1rem;
+    }
+
+    .ocultar-mobile {
+      display: none;
+    }
+  }
+}

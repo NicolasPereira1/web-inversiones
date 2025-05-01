@@ -1,0 +1,160 @@
+@use "variables" as *;
+
+ /* Creo clases para usar extend*/
+%box-shadow-principal {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+%texto-blanco-centro {
+  text-align: center;
+  font-family: $letra-principal;
+  color: $color-blanco;
+}
+
+%texto-amarillo {
+  color: #ffe600;
+  font-family: $letra-principal;
+  text-align: center;
+}
+
+.contenedor-imagenes-nosotros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 2rem;
+
+  .card-tamaño {
+    width: 30rem;
+
+    .nosotros-img {
+      height: 30rem;
+      @extend %box-shadow-principal;
+    }
+
+    .color-card-nosotros {
+      background-color: #1a2a30;
+      @extend %box-shadow-principal;
+
+      .quienes-somos {
+        @extend %texto-blanco-centro;
+        margin-bottom: 1.1rem;
+      }
+
+      .color-card-texto-nosotros {
+        @extend %texto-amarillo;
+        font-size: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+      }
+    }
+  }
+
+  .card-tamaño-director {
+    width: 35rem;
+
+    .nosotros-img-director {
+      height: 36rem;
+      @extend %box-shadow-principal;
+    }
+
+    .color-card-nosotros {
+      @extend %box-shadow-principal;
+      background-color: #1a2a30;
+
+      .quienes-somos {
+        @extend %texto-blanco-centro;
+        margin-bottom: 1.1rem;
+      }
+
+      .color-card-texto-nosotros {
+        @extend %texto-amarillo;
+        font-size: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+      }
+    }
+  }
+}
+
+.contenedor-nosotros-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  column-gap: 10rem;
+  margin-top: 3rem !important;
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+  padding-bottom: 7rem !important;
+
+  .estilo-main {
+    font-family: $letra-principal;
+    font-size: 1.3rem;
+    color: $color-negro;
+    text-align: justify;
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .contenedor-que-son {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtitulo-main {
+    font-family: $letra-principal;
+    font-size: 2.1rem;
+    color: $color-negro;
+    text-align: center;
+    margin: 3rem;
+    text-decoration: underline;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+// MEDIA QUERY
+@media (max-width: 500px) {
+  .nosotros-img {
+    height: 15rem !important;
+  }
+
+  .nosotros-img-director {
+    height: 20rem !important;
+  }
+
+  .card-tamaño {
+    width: 15rem !important;
+  }
+
+  .card-tamaño-director {
+    width: 18rem !important;
+  }
+
+  .quienes-somos {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .color-card-texto-nosotros {
+    font-size: 0.7rem !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .contenedor-nosotros-texto {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

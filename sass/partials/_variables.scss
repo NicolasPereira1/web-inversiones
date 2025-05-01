@@ -1,0 +1,20 @@
+/* variables */
+$color-dorado: #e0b973;
+$color-negro: #000000;
+$color-blanco: #ffffff;
+$letra-principal: "Montserrat", serif;
+
+/* extend en seccion nosotros*/
+
+/* Mixin usado en varias secciones como pages-preguntas o estilos generales*/
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-general{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

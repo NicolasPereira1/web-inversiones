@@ -1,0 +1,226 @@
+@use "variables" as *;
+
+.contenedor-titulo-inicial {
+  @include flex-general;
+
+  .titulo-inicial {
+    text-align: center;
+    padding: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #063f4d;
+    font-family: $letra-principal;
+    font-size: 3rem;
+    color: #a89b26;
+    border-radius: 1.875rem;
+    margin-top: 1rem;
+  }
+}
+
+.background-contacto {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/fondo-contacto.jpg);
+    background-size: cover;
+    filter: blur(1px);
+    z-index: -1;
+  }
+
+  .margen-contacto {
+    width: 90%;
+
+    .mapa {
+      width: 100%;
+      height: 100%;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      margin-right: 0.31rem;
+    }
+
+    .borde-form {
+      border: 0.2rem solid $color-negro;
+      border-radius: 1.875rem;
+      background-color: $color-blanco;
+      padding: 1.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+
+      .subtitulo-main {
+        font-family: $letra-principal;
+        font-size: 2.1rem;
+        color: $color-negro;
+        text-align: center;
+        margin: 3rem;
+        text-decoration: underline;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+      }
+
+      &.background-form {
+        background-color: #7fa2ac;
+
+        form {
+          .formulario-contacto {
+            display: flex;
+            width: 100%;
+            margin-top: 1rem;
+
+            label {
+              text-align: center;
+              width: 40%;
+              padding-right: 5rem;
+              padding-top: 0.7rem;
+              font-family: $letra-principal;
+              font-size: 1.3rem;
+              text-decoration: underline 1px solid $color-negro;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+              width: 60%;
+              height: 2.5rem;
+              border-radius: 1rem;
+              border: 0.2rem solid $color-negro;
+              padding-left: 1.25rem;
+              margin-bottom: 1.25rem;
+            }
+
+            input[type="radio"] {
+              width: 1.3rem;
+              height: 3.5rem;
+            }
+
+            textarea {
+              width: 60%;
+              border: 0.2rem solid $color-negro;
+              padding-left: 1.25rem;
+              margin-bottom: 1.25rem;
+            }
+
+            .label-cliente {
+              text-align: center;
+              width: 40%;
+              padding-right: 5rem;
+              padding-top: 0.7rem;
+              font-family: $letra-principal;
+              font-size: 1.3rem;
+              text-decoration: underline 1px solid $color-negro;
+            }
+
+            .centrado-radio {
+              display: flex;
+              width: 60%;
+              justify-content: space-evenly;
+              padding-left: 3rem;
+              margin-bottom: 1.25rem;
+            }
+          }
+
+          .boton-submit {
+            @include flex-general;
+            width: 100%;
+
+            button[type="submit"] {
+              font-family: $letra-principal;
+              font-size: 2rem;
+              padding: 1rem;
+              border-radius: 1rem;
+              background-color: $color-dorado;
+              color: $color-negro;
+              border: none;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #b3832a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+
+    .margen-contacto {
+      width: 90%;
+
+      .mapa {
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        margin-top: 3rem;
+      }
+
+      .borde-form {
+        border: 0.2rem solid $color-negro;
+        border-radius: 1.875rem;
+        background-color: $color-blanco;
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .subtitulo-main {
+          font-family: $letra-principal;
+          font-size: 2.1rem;
+          color: $color-negro;
+          text-align: center;
+          margin: 3rem;
+          text-decoration: underline;
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        &.background-form {
+          background-color: #7fa2ac;
+
+          form {
+            .formulario-contacto {
+              margin: 0;
+              padding: 0;
+
+              label {
+                padding: 0;
+                padding-right: 2rem;
+                font-size: 1rem;
+              }
+
+              input[type="text"],
+              input[type="email"] {
+                height: 2rem;
+                border-radius: 1rem;
+                border: 0.1rem solid $color-negro;
+              }
+
+              input[type="radio"] {
+                width: 1rem;
+                height: 1.6rem;
+              }
+
+              textarea {
+                border: 0.1rem solid $color-negro;
+              }
+
+              .label-cliente {
+                padding-right: 2rem;
+                font-size: 1rem;
+              }
+            }
+
+            button[type="submit"] {
+              font-size: 1rem !important;
+              padding: 0.7rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

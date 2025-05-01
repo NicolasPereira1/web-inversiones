@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+.reset-colores {
+  --bs-accordion-bg: #2e5a6b37;
+  --bs-accordion-btn-color: $color-negro;
+  --bs-accordion-btn-bg: #2e5a6b37;
+  --bs-accordion-active-color: $color-negro;
+  --bs-accordion-active-bg: #2e5a6bb9;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+  .margin-acordeon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    .mi-hover:hover {
+      background-color: #1c3c47;
+      color: $color-blanco;
+    }
+  }
+
+  .negrita {
+    font-weight: bold;
+  }
+
+
+@media (max-width: 500px) {
+  .margin-acordeon {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .li-acordeon {
+      text-align: left;
+      padding: 0;
+    }
+
+    li {
+      padding-bottom: 0.7rem;
+    }
+  }
+}
