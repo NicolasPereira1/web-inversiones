@@ -510,6 +510,14 @@ ul {
   .background-pages .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
     height: 15rem;
   }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros .quienes-somos {
+    margin-bottom: 0.5rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros .color-card-texto-nosotros {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0;
+  }
   .background-pages .contenedor-imagenes-nosotros .card-tamaño-director {
     width: 18rem;
   }
@@ -537,9 +545,9 @@ ul {
 .margin-acordeon {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  max-width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .margin-acordeon .mi-hover:hover {
   background-color: #1c3c47;
