@@ -144,12 +144,14 @@
       }
     }
   }
+}
 
-  @media (max-width: 500px) {
-    h1 {
-      font-size: 2.5rem !important;
-    }
+@media (max-width: 500px) {
+  .background-contacto .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
+  }
 
+  .background-contacto {
     .margen-contacto {
       width: 90%;
 
@@ -214,9 +216,11 @@
               }
             }
 
-            button[type="submit"] {
-              font-size: 1rem !important;
-              padding: 0.7rem !important;
+            .boton-submit {
+              button[type="submit"] {
+                font-size: 1rem;
+                padding: 0.7rem;
+              }
             }
           }
         }

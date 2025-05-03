@@ -319,78 +319,83 @@ ul {
   margin-right: 10%;
   margin-bottom: 4rem;
 }
+
 @media (max-width: 500px) {
-  .background-pages .contenedor-que-son {
-    grid-template-rows: 1fr;
-  }
-  .background-pages .contenedor-uso-tipos {
-    grid-template-columns: 1fr;
+  .background-pages .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .background-pages .estilo-main {
     font-size: 1rem;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .background-pages .p-main {
-    font-size: 1.4rem;
+  .background-pages .estilo-main .contenedor-que-son {
+    grid-template-rows: 1fr;
   }
-  .background-pages .titulo-inicial {
-    font-size: 2.5rem !important;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .background-pages .subtitulo-main {
+  .background-pages .estilo-main .contenedor-que-son .subtitulo-main {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
-  .background-pages .estilo-uso-tipos {
+  .background-pages .contenedor-imagenes {
+    flex-direction: column;
+    margin: 0;
+  }
+  .background-pages .contenedor-imagenes .pages-img {
+    width: 90%;
+    height: 10rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+  }
+  .background-pages .contenedor-uso-tipos {
+    grid-template-columns: 1fr;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main .p-main {
+    font-size: 1.4rem;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main .estilo-uso-tipos {
     font-size: 1rem;
     margin: 0;
     margin-bottom: 1rem;
   }
-  .background-pages .card-tamaño-pages {
-    width: 85% !important;
+  .background-pages .contenedor-cards {
+    margin-top: 1.5rem;
   }
-  .background-pages .img-card-tamaño {
-    height: 10rem !important;
+  .background-pages .contenedor-cards .card-tamaño-pages {
+    width: 85%;
   }
-  .background-pages .card-titulo {
-    font-size: 1.3rem !important;
-    margin-bottom: 0.5rem !important;
+  .background-pages .contenedor-cards .card-tamaño-pages .img-card-tamaño {
+    height: 10rem;
   }
-  .background-pages .card-descripcion {
-    font-size: 1rem !important;
-    padding: 0 !important;
+  .background-pages .contenedor-cards .card-tamaño-pages .card-color .card-titulo {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
-  .background-pages .estilo-main-conclusion {
+  .background-pages .contenedor-cards .card-tamaño-pages .card-color .card-descripcion {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .background-pages .contenedor-conclusion .estilo-main-conclusion {
     margin: 0;
     font-size: 1rem;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 2rem;
   }
-  .background-pages .contenedor-cards {
-    margin-top: 1.5rem;
-  }
-  .background-pages .contenedor-imagenes {
-    flex-direction: column;
-    margin: 0;
-  }
-  .background-pages .pages-img {
-    width: 90% !important;
-    height: 10rem !important;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1rem;
-  }
   .background-pages .ocultar-mobile {
     display: none;
   }
 }
-
 /* Creo clases para usar extend*/
 .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros, .contenedor-imagenes-nosotros .card-tamaño-director .nosotros-img-director, .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros, .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -453,17 +458,17 @@ ul {
   padding-right: 1.2rem;
 }
 
-.contenedor-nosotros-texto {
+.background-pages .contenedor-nosotros-texto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   column-gap: 10rem;
-  margin-top: 3rem !important;
-  margin-left: 5rem !important;
-  margin-right: 5rem !important;
-  padding-bottom: 7rem !important;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 7rem;
 }
-.contenedor-nosotros-texto .estilo-main {
+.background-pages .contenedor-nosotros-texto .estilo-main {
   font-family: "Montserrat", serif;
   font-size: 1.3rem;
   color: #000000;
@@ -472,14 +477,14 @@ ul {
   padding-left: 8%;
   padding-right: 8%;
 }
-.contenedor-nosotros-texto .contenedor-que-son {
+.background-pages .contenedor-nosotros-texto .contenedor-que-son {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
-.contenedor-nosotros-texto .subtitulo-main {
+.background-pages .contenedor-nosotros-texto .subtitulo-main {
   font-family: "Montserrat", serif;
   font-size: 2.1rem;
   color: #000000;
@@ -488,37 +493,36 @@ ul {
   text-decoration: underline;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
-
-.subrayado {
+.background-pages .subrayado {
   text-decoration: underline;
 }
 
 @media (max-width: 500px) {
-  .nosotros-img {
-    height: 15rem !important;
+  .background-pages .contenedor-nosotros-texto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .nosotros-img-director {
-    height: 20rem !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño {
+    width: 15rem;
   }
-  .card-tamaño {
-    width: 15rem !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
+    height: 15rem;
   }
-  .card-tamaño-director {
-    width: 18rem !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director {
+    width: 18rem;
   }
-  .quienes-somos {
-    margin-bottom: 0.5rem !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .nosotros-img-director {
+    height: 20rem;
   }
-  .color-card-texto-nosotros {
-    font-size: 0.7rem !important;
-    width: 100% !important;
-    padding: 0 !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros .quienes-somos {
+    margin-bottom: 0.5rem;
   }
-  .contenedor-nosotros-texto {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros .color-card-texto-nosotros {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0;
   }
 }
 .reset-colores {
@@ -690,9 +694,10 @@ ul {
 .background-contacto .margen-contacto .borde-form.background-form form .boton-submit button[type=submit]:hover {
   background-color: #b3832a;
 }
+
 @media (max-width: 500px) {
-  .background-contacto h1 {
-    font-size: 2.5rem !important;
+  .background-contacto .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
   }
   .background-contacto .margen-contacto {
     width: 90%;
@@ -749,12 +754,11 @@ ul {
     padding-right: 2rem;
     font-size: 1rem;
   }
-  .background-contacto .margen-contacto .borde-form.background-form form button[type=submit] {
-    font-size: 1rem !important;
-    padding: 0.7rem !important;
+  .background-contacto .margen-contacto .borde-form.background-form form .boton-submit button[type=submit] {
+    font-size: 1rem;
+    padding: 0.7rem;
   }
 }
-
 .contenedor-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -827,7 +831,7 @@ ul {
   padding-right: 1.875rem;
   padding-left: 1.875rem;
 }
-.contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos .redes-sociales-iconos {
+.contenedor-footer .footer-col-iconos .redes-sociales .redes-sociales-iconos {
   margin: 0;
   padding: 0;
   width: 2.5rem;
@@ -872,9 +876,9 @@ ul {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
-  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos .redes-sociales-iconos {
-    width: 2rem !important;
-    height: 2rem !important;
+  .contenedor-footer .footer-col-iconos .redes-sociales .redes-sociales-iconos {
+    width: 2rem;
+    height: 2rem;
   }
   .contenedor-footer .logo-footer {
     order: 3;

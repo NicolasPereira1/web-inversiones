@@ -34,11 +34,11 @@
     }
   }
 
-  .logo-footer{
+  .logo-footer {
     text-align: center;
     padding-top: 0.3125rem;
 
-    .logo-footer-tamaño{
+    .logo-footer-tamaño {
       width: 20%;
       height: 20%;
     }
@@ -77,13 +77,12 @@
       .estilo-iconos {
         padding-right: 1.875rem;
         padding-left: 1.875rem;
-
-        .redes-sociales-iconos {
-          margin: 0;
-          padding: 0;
-          width: 2.5rem;
-          height: 2.5rem;
-        }
+      }
+      .redes-sociales-iconos {
+        margin: 0;
+        padding: 0;
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
   }
@@ -94,7 +93,7 @@
     grid-template-columns: 1fr;
 
     .footer-col-enlaces {
-  @include flex-column;
+      @include flex-column;
       align-items: center;
       order: 1;
 
@@ -128,11 +127,10 @@
         .estilo-iconos {
           padding-right: 1.5rem;
           padding-left: 1.5rem;
-
-          .redes-sociales-iconos {
-            width: 2rem !important;
-            height: 2rem !important;
-          }
+        }
+        .redes-sociales-iconos {
+          width: 2rem;
+          height: 2rem;
         }
       }
     }
@@ -149,4 +147,3 @@
     }
   }
 }
-
