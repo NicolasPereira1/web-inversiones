@@ -107,16 +107,16 @@ ul {
 .background-inicio {
   background-image: url(../assets/fondo-inicio.jpg);
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 .background-inicio .contenedor-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  min-height: 100vh;
 }
 .background-inicio .contenedor-main .primer-texto {
   background-color: #f4f7f9;
@@ -180,8 +180,12 @@ ul {
   .background-inicio {
     background-image: url(../assets/fondo-inicio.jpg);
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     background-repeat: no-repeat;
+  }
+  .background-inicio .contenedor-main {
+    justify-content: flex-start;
+    padding-top: 8rem;
   }
   .background-inicio .contenedor-main .primer-texto {
     margin-left: 10%;
@@ -589,10 +593,10 @@ ul {
   margin: 2rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño {
-  width: 25rem;
+  width: 30rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
-  height: 20rem;
+  height: 30rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros {
   background-color: #1a2a30;
@@ -601,15 +605,15 @@ ul {
   margin-bottom: 1.1rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros .color-card-texto-nosotros {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director {
-  width: 30rem;
+  width: 35rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director .nosotros-img-director {
-  height: 25rem;
+  height: 34rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros {
   background-color: #1a2a30;
@@ -618,7 +622,7 @@ ul {
   margin-bottom: 1.1rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros .color-card-texto-nosotros {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
 }
@@ -668,9 +672,6 @@ ul {
     grid-template-rows: 1fr 1fr;
     margin-left: 0;
     margin-right: 0;
-  }
-  .background-pages .contenedor-imagenes-nosotros {
-    flex-wrap: wrap;
   }
   .background-pages .contenedor-imagenes-nosotros .card-tamaño {
     width: 15rem;
@@ -1294,4 +1295,4 @@ ul {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilo.css.map */

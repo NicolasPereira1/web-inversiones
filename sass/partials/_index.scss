@@ -3,14 +3,14 @@
 .background-inicio {
   background-image: url(../assets/fondo-inicio.jpg);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
 
   .contenedor-main {
     @include flex-general;
-    min-height: 100vh;
     flex-direction: column;
     text-align: center;
+    min-height: 100vh;
 
     .primer-texto {
       background-color: #f4f7f9;
@@ -87,12 +87,10 @@
   .background-inicio {
     background-image: url(../assets/fondo-inicio.jpg);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     
 .contenedor-main {
-  justify-content: flex-start;
-  padding-top: 8rem;
 
   .primer-texto {
     margin-left: 10%;
