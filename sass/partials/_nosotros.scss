@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.25rem;
   margin: 2rem;
 
@@ -136,6 +136,59 @@
     }
 
     .contenedor-imagenes-nosotros {
+      .card-tamaño {
+        width: 15rem;
+
+        .nosotros-img {
+          height: 15rem;
+        }
+        .color-card-nosotros {
+          .quienes-somos {
+            margin-bottom: 0.5rem;
+          }
+
+          .color-card-texto-nosotros {
+            font-size: 0.7rem;
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+
+      .card-tamaño-director {
+        width: 18rem;
+
+        .nosotros-img-director {
+          height: 20rem;
+        }
+
+        .color-card-nosotros {
+          .quienes-somos {
+            margin-bottom: 0.5rem;
+          }
+
+          .color-card-texto-nosotros {
+            font-size: 0.7rem;
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width:1024px) {
+  .background-pages {
+    .contenedor-nosotros-texto {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .contenedor-imagenes-nosotros {
+      flex-wrap: nowrap;
       .card-tamaño {
         width: 15rem;
 

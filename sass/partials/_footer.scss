@@ -81,14 +81,14 @@
       .redes-sociales-iconos {
         margin: 0;
         padding: 0;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
       }
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .contenedor-footer {
     grid-template-columns: 1fr;
 
@@ -144,6 +144,89 @@
         padding-top: 1rem;
         margin-bottom: 0.4rem;
       }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .contenedor-footer .footer-col-enlaces .titulos-footer {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.3rem;
+  }
+
+  .contenedor-footer .footer-col-enlaces .contenedor-enlaces .footer-estilo {
+    font-size: 0.9rem;
+    padding-right: 2.7rem;
+    text-align: center;
+  }
+
+  .contenedor-footer .footer-col-iconos .titulos-footer {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.3rem;
+  }
+
+  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos {
+    padding-right: 1rem;
+    padding-left: 0;
+
+    .redes-sociales-iconos {
+      margin: 0;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .contenedor-footer .logo-footer{
+    padding-top: 1rem;
+
+    .footer-p{
+      font-size: 0.7rem;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+      .logo-footer-tamaño {
+      width: 100px;
+      height: 90px;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+
+  .contenedor-footer .footer-col-enlaces .contenedor-enlaces .footer-estilo {
+    font-size: 0.9rem;
+    padding-right: 3.5rem;
+  }
+
+   .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos {
+    padding-right: 1rem;
+    padding-left: 0;
+
+    .redes-sociales-iconos {
+      margin: 0;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+    .contenedor-footer .logo-footer{
+    padding-top: 1rem;
+
+    .footer-p{
+      font-size: 0.7rem;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+      .logo-footer-tamaño {
+      width: 50%;
+      height: 50%;
     }
   }
 }

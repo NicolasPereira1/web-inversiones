@@ -72,15 +72,35 @@ ul {
     margin: 0;
     transition: none;
   }
-  .menu-navegacion .nav-link {
-    margin: 0;
+}
+@media (min-width: 501px) and (max-width: 992px) {
+  .menu-navegacion {
+    align-items: center;
     padding: 0;
+    gap: 0;
   }
-  .menu-navegacion .custom-navbar:hover {
-    background-color: #102b36;
-    color: #e0b973;
-    font-weight: normal;
+  .menu-navegacion .custom-navbar {
+    font-size: 1.7rem;
     padding: 0;
+    margin: 0;
+    transition: none;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .menu-navegacion {
+    align-items: center;
+    padding: 0;
+    gap: 0;
+  }
+  .menu-navegacion .menu-navegacion .custom-navbar:hover {
+    background-color: #889ca4;
+    font-weight: bold;
+    color: #213555;
+  }
+  .menu-navegacion .custom-navbar {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 2rem;
   }
 }
 .background-inicio {
@@ -191,6 +211,41 @@ ul {
     text-align: justify;
   }
 }
+@media (min-width: 501px) and (max-width: 768px) {
+  .background-inicio .contenedor-main .primer-texto {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+    padding: 0;
+  }
+  .background-inicio .contenedor-main .titulo-principal {
+    font-size: 2.5rem;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 1rem;
+  }
+  .background-inicio .contenedor-main .boton-agenda {
+    border: #000000 0.1rem solid;
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+  .background-inicio .contenedor-main .texto-principal {
+    width: 90%;
+    margin-top: 2rem;
+    margin-right: 8%;
+    margin-left: 8%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .background-inicio .contenedor-main .texto-principal {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+}
 .background-pages {
   background-color: rgba(46, 90, 107, 0.231372549);
 }
@@ -224,9 +279,11 @@ ul {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
   gap: 1.25rem;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .background-pages .contenedor-imagenes .pages-img {
-  width: 31.25rem;
+  width: 100%;
   height: 21.875rem;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -321,6 +378,13 @@ ul {
 }
 
 @media (max-width: 500px) {
+  .background-pages .estilo-main .subtitulo-main {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
   .background-pages .contenedor-titulo-inicial .titulo-inicial {
     font-size: 2.5rem;
     margin-left: 15px;
@@ -360,8 +424,15 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .background-pages .contenedor-uso-tipos .estilo-main .subtitulo-main {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
   .background-pages .contenedor-uso-tipos .estilo-main .p-main {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .background-pages .contenedor-uso-tipos .estilo-main .estilo-uso-tipos {
     font-size: 1rem;
@@ -392,8 +463,105 @@ ul {
     padding-right: 20px;
     margin-bottom: 2rem;
   }
+  .background-pages .contenedor-conclusion .estilo-main-conclusion .subtitulo-main {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
   .background-pages .ocultar-mobile {
     display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .background-pages .estilo-main .subtitulo-main {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .background-pages .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .background-pages .estilo-main {
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .background-pages .estilo-main .contenedor-que-son {
+    grid-template-rows: 1fr;
+  }
+  .background-pages .estilo-main .contenedor-que-son .subtitulo-main {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .background-pages .contenedor-imagenes .pages-img {
+    width: 94%;
+    height: 10rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1rem;
+  }
+  .background-pages .contenedor-uso-tipos {
+    grid-template-columns: 1fr;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main {
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main .subtitulo-main {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main .p-main {
+    font-size: 1.5rem;
+  }
+  .background-pages .contenedor-uso-tipos .estilo-main .estilo-uso-tipos {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .background-pages .contenedor-cards {
+    margin-top: 1.5rem;
+  }
+  .background-pages .contenedor-cards .card-tamaño-pages {
+    width: 75%;
+  }
+  .background-pages .contenedor-cards .card-tamaño-pages .img-card-tamaño {
+    height: 90%;
+  }
+  .background-pages .contenedor-cards .card-tamaño-pages .card-color .card-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .background-pages .contenedor-cards .card-tamaño-pages .card-color .card-descripcion {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .background-pages .contenedor-conclusion .estilo-main-conclusion {
+    margin: 0;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2rem;
+  }
+  .background-pages .contenedor-conclusion .estilo-main-conclusion .subtitulo-main {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 /* Creo clases para usar extend*/
@@ -419,7 +587,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.25rem;
   margin: 2rem;
 }
@@ -503,6 +671,45 @@ ul {
     grid-template-rows: 1fr 1fr;
     margin-left: 0;
     margin-right: 0;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño {
+    width: 15rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
+    height: 15rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros .quienes-somos {
+    margin-bottom: 0.5rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño .color-card-nosotros .color-card-texto-nosotros {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director {
+    width: 18rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .nosotros-img-director {
+    height: 20rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros .quienes-somos {
+    margin-bottom: 0.5rem;
+  }
+  .background-pages .contenedor-imagenes-nosotros .card-tamaño-director .color-card-nosotros .color-card-texto-nosotros {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .background-pages .contenedor-nosotros-texto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .background-pages .contenedor-imagenes-nosotros {
+    flex-wrap: nowrap;
   }
   .background-pages .contenedor-imagenes-nosotros .card-tamaño {
     width: 15rem;
@@ -703,6 +910,7 @@ ul {
   background-color: #b3832a;
 }
 
+/* CELULARES*/
 @media (max-width: 500px) {
   .background-contacto .contenedor-titulo-inicial .titulo-inicial {
     font-size: 2.5rem;
@@ -765,6 +973,126 @@ ul {
   .background-contacto .margen-contacto .borde-form.background-form form .boton-submit button[type=submit] {
     font-size: 1rem;
     padding: 0.7rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .background-contacto .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
+  }
+  .background-contacto .margen-contacto {
+    width: 90%;
+  }
+  .background-contacto .margen-contacto .mapa {
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .background-contacto .margen-contacto .borde-form {
+    border: 0.2rem solid #000000;
+    border-radius: 1.875rem;
+    background-color: #ffffff;
+    padding: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .background-contacto .margen-contacto .borde-form .subtitulo-main {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form {
+    background-color: #7fa2ac;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto {
+    margin: 0;
+    padding: 0;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto label {
+    padding: 0;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=text],
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=email] {
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #000000;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=radio] {
+    width: 1rem;
+    height: 1.6rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto textarea {
+    border: 0.1rem solid #000000;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto .label-cliente {
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .boton-submit button[type=submit] {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+/*Laptops y desktop chicos*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .background-contacto .margen-contacto .mapa {
+    height: 85%;
+    border-radius: 1.8rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  .background-contacto .margen-contacto .borde-form {
+    border: 0.2rem solid #000000;
+    border-radius: 1.875rem;
+    background-color: #ffffff;
+    padding: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .background-contacto .margen-contacto .borde-form .subtitulo-main {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form {
+    background-color: #7fa2ac;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto {
+    margin: 0;
+    padding: 0;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto label {
+    padding: 0;
+    padding-right: 2rem;
+    font-size: 1.4rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=text],
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=email] {
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #000000;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto input[type=radio] {
+    width: 1rem;
+    height: 1.6rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto textarea {
+    border: 0.1rem solid #000000;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .formulario-contacto .label-cliente {
+    padding-right: 2rem;
+    font-size: 1.4rem;
+  }
+  .background-contacto .margen-contacto .borde-form.background-form form .boton-submit button[type=submit] {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .contenedor-footer {
@@ -842,11 +1170,11 @@ ul {
 .contenedor-footer .footer-col-iconos .redes-sociales .redes-sociales-iconos {
   margin: 0;
   padding: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .contenedor-footer {
     grid-template-columns: 1fr;
   }
@@ -896,6 +1224,73 @@ ul {
     font-size: 0.6rem;
     padding-top: 1rem;
     margin-bottom: 0.4rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .contenedor-footer .footer-col-enlaces .titulos-footer {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.3rem;
+  }
+  .contenedor-footer .footer-col-enlaces .contenedor-enlaces .footer-estilo {
+    font-size: 0.9rem;
+    padding-right: 2.7rem;
+    text-align: center;
+  }
+  .contenedor-footer .footer-col-iconos .titulos-footer {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.3rem;
+  }
+  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos .redes-sociales-iconos {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .contenedor-footer .logo-footer {
+    padding-top: 1rem;
+  }
+  .contenedor-footer .logo-footer .footer-p {
+    font-size: 0.7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contenedor-footer .logo-footer .logo-footer-tamaño {
+    width: 100px;
+    height: 90px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .contenedor-footer .footer-col-enlaces .contenedor-enlaces .footer-estilo {
+    font-size: 0.9rem;
+    padding-right: 3.5rem;
+  }
+  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  .contenedor-footer .footer-col-iconos .redes-sociales .estilo-iconos .redes-sociales-iconos {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .contenedor-footer .logo-footer {
+    padding-top: 1rem;
+  }
+  .contenedor-footer .logo-footer .footer-p {
+    font-size: 0.7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contenedor-footer .logo-footer .logo-footer-tamaño {
+    width: 50%;
+    height: 50%;
   }
 }
 

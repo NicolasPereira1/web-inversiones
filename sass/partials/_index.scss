@@ -125,3 +125,50 @@
 }
 }
 
+@media (min-width:501px) and (max-width:768px){
+
+  .background-inicio {
+    
+.contenedor-main {
+
+  .primer-texto {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+    padding: 0;
+  }
+  
+  .titulo-principal {
+    font-size: 2.5rem;
+    margin-right: 8%;
+    margin-left: 8%;
+    
+    margin-bottom: 1rem;
+  }
+  
+  .boton-agenda {
+    border: $color-negro 0.1rem solid;
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+  
+  .texto-principal {
+    width: 90%;
+    margin-top: 2rem;
+    margin-right: 8%;
+    margin-left: 8%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+}
+}
+}
+
+@media (min-width:769px) and (max-width:1200px){
+  .background-inicio .contenedor-main .texto-principal{
+    width: 95%;
+  font-size: 1.1rem;
+  }
+}

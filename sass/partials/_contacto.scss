@@ -146,6 +146,7 @@
   }
 }
 
+/* CELULARES*/
 @media (max-width: 500px) {
   .background-contacto .contenedor-titulo-inicial .titulo-inicial {
     font-size: 2.5rem;
@@ -220,6 +221,164 @@
               button[type="submit"] {
                 font-size: 1rem;
                 padding: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width:768px) {
+  .background-contacto .contenedor-titulo-inicial .titulo-inicial {
+    font-size: 2.5rem;
+  }
+
+  .background-contacto {
+    .margen-contacto {
+      width: 90%;
+
+      .mapa {
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        margin-top: 3rem;
+      }
+
+      .borde-form {
+        border: 0.2rem solid $color-negro;
+        border-radius: 1.875rem;
+        background-color: $color-blanco;
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+         .subtitulo-main {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+
+        &.background-form {
+          background-color: #7fa2ac;
+
+          form {
+            .formulario-contacto {
+              margin: 0;
+              padding: 0;
+
+              label {
+                padding: 0;
+                padding-right: 2rem;
+                font-size: 1.3rem;
+              }
+
+              input[type="text"],
+              input[type="email"] {
+                height: 2rem;
+                border-radius: 1rem;
+                border: 0.1rem solid $color-negro;
+              }
+
+              input[type="radio"] {
+                width: 1rem;
+                height: 1.6rem;
+              }
+
+              textarea {
+                border: 0.1rem solid $color-negro;
+              }
+
+              .label-cliente {
+                padding-right: 2rem;
+                font-size: 1.3rem;
+              }
+            }
+
+            .boton-submit {
+              button[type="submit"] {
+                font-size: 1.3rem;
+                padding: 0.7rem;
+                font-weight: 700;
+                padding-left: 1rem;
+                padding-right: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Laptops y desktop chicos*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .background-contacto .margen-contacto .mapa {
+    height: 85%;
+    border-radius: 1.8rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+
+  .background-contacto {
+    .margen-contacto {
+      .borde-form {
+        border: 0.2rem solid $color-negro;
+        border-radius: 1.875rem;
+        background-color: $color-blanco;
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .subtitulo-main {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+
+        &.background-form {
+          background-color: #7fa2ac;
+
+          form {
+            .formulario-contacto {
+              margin: 0;
+              padding: 0;
+
+              label {
+                padding: 0;
+                padding-right: 2rem;
+                font-size: 1.4rem;
+              }
+
+              input[type="text"],
+              input[type="email"] {
+                height: 2rem;
+                border-radius: 1rem;
+                border: 0.1rem solid $color-negro;
+              }
+
+              input[type="radio"] {
+                width: 1rem;
+                height: 1.6rem;
+              }
+
+              textarea {
+                border: 0.1rem solid $color-negro;
+              }
+
+              .label-cliente {
+                padding-right: 2rem;
+                font-size: 1.4rem;
+              }
+            }
+
+            .boton-submit {
+              button[type="submit"] {
+                font-size: 1.3rem;
+                font-weight: 700;
+                padding: 0.7rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
               }
             }
           }

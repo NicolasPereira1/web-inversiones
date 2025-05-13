@@ -37,9 +37,11 @@
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
     gap: 1.25rem;
+    padding-left: 3%;
+    padding-right: 3%;
 
     .pages-img {
-      width: 31.25rem;
+      width: 100%;
       height: 21.875rem;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -151,6 +153,15 @@
 
 @media (max-width: 500px) {
   .background-pages {
+    .estilo-main {
+      .subtitulo-main {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+      }
+    }
     .contenedor-titulo-inicial {
       .titulo-inicial {
         font-size: 2.5rem;
@@ -198,8 +209,16 @@
         padding-left: 15px;
         padding-right: 15px;
 
+        .subtitulo-main {
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
+
         .p-main {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
         }
 
         .estilo-uso-tipos {
@@ -241,10 +260,142 @@
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 2rem;
+
+        .subtitulo-main {
+          font-size: 1.6rem;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
       }
     }
     .ocultar-mobile {
       display: none;
     }
   }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+
+   .background-pages {
+    .estilo-main {
+      .subtitulo-main {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+      }
+    }
+    .contenedor-titulo-inicial {
+      .titulo-inicial {
+        font-size: 2.5rem;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+
+    .estilo-main {
+      font-size: 1.2rem;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .contenedor-que-son {
+        grid-template-rows: 1fr;
+
+        .subtitulo-main {
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    .contenedor-imagenes {
+
+      .pages-img {
+        width: 94%;
+        height: 10rem;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .contenedor-uso-tipos {
+      grid-template-columns: 1fr;
+
+      .estilo-main {
+        font-size: 1.2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .subtitulo-main {
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
+
+        .p-main {
+          font-size: 1.5rem;
+        }
+
+        .estilo-uso-tipos {
+          font-size: 1.2rem;
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .contenedor-cards {
+      margin-top: 1.5rem;
+
+      .card-tamaño-pages {
+        width: 75%;
+
+        .img-card-tamaño {
+          height: 90%;
+        }
+
+        .card-color {
+          .card-titulo {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .card-descripcion {
+            font-size: 1.1rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .contenedor-conclusion {
+      .estilo-main-conclusion {
+        margin: 0;
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 2rem;
+
+        .subtitulo-main {
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px){
 }
