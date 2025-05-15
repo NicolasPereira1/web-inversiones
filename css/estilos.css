@@ -239,6 +239,10 @@ ul {
     font-size: 1.1rem;
   }
 }
+.body-inicio {
+  background-color: rgba(46, 90, 107, 0.231372549);
+}
+
 .background-pages {
   background-color: rgba(46, 90, 107, 0.231372549);
 }
@@ -576,6 +580,10 @@ ul {
   text-align: center;
 }
 
+.body-inicio {
+  background-color: rgba(46, 90, 107, 0.231372549);
+}
+
 .contenedor-imagenes-nosotros {
   display: flex;
   width: 80%;
@@ -735,6 +743,10 @@ ul {
     padding: 0;
   }
 }
+.body-inicio {
+  background-color: rgba(46, 90, 107, 0.231372549);
+}
+
 .reset-colores {
   --bs-accordion-bg: #2e5a6b37;
   --bs-accordion-btn-color: $color-negro;
@@ -774,6 +786,10 @@ ul {
     padding-bottom: 0.7rem;
   }
 }
+.body-inicio {
+  background-color: rgba(46, 90, 107, 0.231372549);
+}
+
 .contenedor-titulo-inicial {
   display: flex;
   justify-content: center;

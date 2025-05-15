@@ -1,5 +1,8 @@
 @use "variables" as *;
 
+.body-inicio{
+  background-color: #2e5a6b3b;
+}
 .reset-colores {
   --bs-accordion-bg: #2e5a6b37;
   --bs-accordion-btn-color: $color-negro;
