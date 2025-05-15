@@ -582,14 +582,15 @@ ul {
 
 .contenedor-imagenes-nosotros {
   display: flex;
+  width: 80%;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 1.25rem;
-  margin: 2rem;
+  gap: 1.5rem;
+  margin: 2rem auto;
 }
 .contenedor-imagenes-nosotros .card-tamaño {
-  width: 25rem;
+  width: 20rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño .nosotros-img {
   height: 20rem;
@@ -606,7 +607,7 @@ ul {
   padding-right: 1.2rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director {
-  width: 30rem;
+  width: 25rem;
 }
 .contenedor-imagenes-nosotros .card-tamaño-director .nosotros-img-director {
   height: 25rem;
