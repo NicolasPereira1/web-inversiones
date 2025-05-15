@@ -22,7 +22,6 @@
 .contenedor-imagenes-nosotros {
   display: flex;
     width: 80%;
-  
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
@@ -30,7 +29,7 @@
   margin: 2rem auto;
 
   .card-tamaño {
-    width: 20rem;
+    width: 21rem;
 
     .nosotros-img {
       height: 20rem;
@@ -43,20 +42,19 @@
 
       .quienes-somos {
         @extend %texto-blanco-centro;
+        font-size: 1.3rem;
         margin-bottom: 1.1rem;
       }
 
       .color-card-texto-nosotros {
         @extend %texto-amarillo;
         font-size: 1rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
       }
     }
   }
 
   .card-tamaño-director {
-    width: 25rem;
+    width: 26rem;
 
     .nosotros-img-director {
       height: 25rem;
@@ -68,6 +66,7 @@
       background-color: #1a2a30;
 
       .quienes-somos {
+        font-size: 1.5rem;
         @extend %texto-blanco-centro;
         margin-bottom: 1.1rem;
       }
@@ -75,8 +74,6 @@
       .color-card-texto-nosotros {
         @extend %texto-amarillo;
         font-size: 1rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
       }
     }
   }
