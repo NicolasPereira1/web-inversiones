@@ -1,7 +1,5 @@
 @use "variables" as *;
-.body-inicio{
-  background-color: #2e5a6b3b;
-}
+
 .contenedor-titulo-inicial {
   @include flex-general;
 
