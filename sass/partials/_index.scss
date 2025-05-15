@@ -1,5 +1,8 @@
 @use "variables" as *;
 
+.body-inicio {
+   background-color: #102b36;
+}
 .background-inicio {
   background-image: url(../assets/fondo-inicio.jpg);
   background-size: cover;
