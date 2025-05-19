@@ -624,8 +624,8 @@ ul {
   justify-content: space-around;
   column-gap: 10rem;
   margin-top: 3rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding-bottom: 7rem;
 }
 .background-pages .contenedor-nosotros-texto .estilo-main {
@@ -663,6 +663,10 @@ ul {
     grid-template-rows: 1fr 1fr;
     margin-left: 0;
     margin-right: 0;
+  }
+  .background-pages p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .background-pages .contenedor-imagenes-nosotros {
     flex-wrap: wrap;
