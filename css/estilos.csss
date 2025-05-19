@@ -707,10 +707,6 @@ ul {
     margin-left: 0;
     margin-right: 0;
   }
-  .background-pages p {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .background-pages .contenedor-imagenes-nosotros {
     flex-wrap: nowrap;
   }
@@ -1297,4 +1293,4 @@ ul {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.csss.map */
